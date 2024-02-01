@@ -1,0 +1,253 @@
+.desktophidden {
+    display: none;
+}
+
+.cta-full-white,
+.cta-empty {
+    font-size: 0.8em !important;
+}
+
+@media (max-width: 768px) {
+
+    .heading-hero,
+    .heading-sections,
+    .tiitle-footer {
+        font-size: 2em !important;
+        /* Légèrement plus petit sur tablette */
+    }
+
+    .top-heading {
+        font-size: 1.5em !important;
+    }
+
+    .sub-title-hero,
+    .paragraphe,
+    .paragraphe-white,
+    .footer-button-wrapper {
+        font-size: 1em !important;
+    }
+
+    .cta-full-white,
+    .cta-empty,
+    .cta-sections,
+    .cta-full-white-cta-section,
+    .cta-footer,
+    .cta-button-footer {
+        padding: 0.8em 1.6em !important;
+        font-size: 0.9em !important;
+    }
+
+    .bouton-nav-bar {
+        font-size: 1.5vw !important;
+        /* Réduire la taille de la police */
+        padding-left: 2vw !important;
+        /* Ajuster le padding */
+        padding-right: 2vw !important;
+        height: 2.5vw !important;
+        /* Ajuster la hauteur */
+    }
+
+    .logo-button {
+        width: 40%;
+    }
+
+    .produit-preview-hero {
+        width: 100% !important;
+    }
+
+    .bouton-discrod {
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .mobilehidden {
+        display: none !important;
+    }
+
+    .desktophidden {
+        display: block !important;
+    }
+
+    .content-wrapper-right {
+        width: 100%;
+    }
+
+    .content-wrapper-cta {
+        width: 70%;
+    }
+
+    .footer-button-wrapper {
+        margin-bottom: 0;
+    }
+
+    .desktophidden h3 {
+        margin-top: 3vh;
+        text-align: center;
+    }
+
+    .content-wrapper-left-membre {
+        width: 75% !important;
+    }
+}
+
+/* Media Query pour Mobiles */
+@media (max-width: 480px) {
+
+    .heading-hero,
+    .heading-sections,
+    .tiitle-footer {
+        font-size: 1.5em !important;
+        /* Encore plus petit pour mobile */
+    }
+
+    .top-heading {
+        font-size: 1em !important;
+    }
+
+    .sub-title-hero,
+    .paragraphe,
+    .paragraphe-white,
+    .footer-button-wrapper,
+    .cta-footer,
+    .cta-button-footer {
+        font-size: 0.9em !important;
+    }
+
+    .cta-full-white,
+    .cta-empty,
+    .cta-sections,
+    .cta-full-white-cta-section {
+        padding: 0.7em 1.4em !important;
+        font-size: 0.7em !important;
+    }
+
+    .bouton-nav-bar {
+        font-size: 3vw !important;
+        /* Encore plus petit pour les mobiles */
+        padding-left: 1vw !important;
+        padding-right: 3.5vw !important;
+        height: 7vw !important;
+    }
+
+    .logo-button {
+        width: 65%;
+    }
+
+    .produit-preview-hero {
+        width: 100% !important;
+    }
+
+    .bouton-discrod {
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .content-wrapper-cta {
+        width: 95%;
+    }
+}
+
+.rowo {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8vw;
+    /* 8vw padding des deux côtés */
+}
+
+.colog {
+    width: 40%;
+    /* Ajustez selon besoin */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.cold {
+    width: 60%;
+    /* Ajustez selon besoin */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .rowo {
+        flex-direction: column;
+        padding: 4vw;
+        padding-top: 30vh;
+    }
+    .special10 {
+        padding-top: 4vh;
+    }
+
+    .colog,
+    .cold,
+    .content-wrapper-left {
+        width: 100% !important;
+        margin: 2vh 0;
+        /* Ajoute un peu d'espace vertical */
+    }
+}
+
+.bouton-discrod {
+    background-color: #BCBBB6;
+    width: 8vh;
+    height: 8vh;
+}
+
+@keyframes regarderAutour {
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+        /* Centre */
+    }
+
+    12.5% {
+        transform: translate(-10px, -10px);
+        /* Nord-ouest */
+    }
+
+    25% {
+        transform: translate(0, 0);
+        /* Centre */
+    }
+
+    37.5% {
+        transform: translate(-10px, 10px);
+        /* Sud-ouest */
+    }
+
+    50% {
+        transform: translate(0, 0);
+        /* Centre */
+    }
+
+    62.5% {
+        transform: translate(10px, 10px);
+        /* Sud-est */
+    }
+
+    75% {
+        transform: translate(0, 0);
+        /* Centre */
+    }
+
+    87.5% {
+        transform: translate(10px, -10px);
+        /* Nord-est */
+    }
+}
+
+.logo-whatsapp {
+    animation: regarderAutour 12s infinite;
+}
+
+.bouton-discrod {
+    background-color: rgba(150, 150, 150, 0.2) !important;
+    
+    backdrop-filter: blur(5px) !important;
+}
